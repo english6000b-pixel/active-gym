@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACTIVE GYM | أكتيف جيم — السيب، المعبيلة، مسقط</title>
+  <meta name="description" content="أحدث تجربة جيم في السيب، المعبيلة، مسقط — أجهزة احترافية ومدربون معتمدون وطاقة لا تتوقف. Oman's most modern gym experience in Al Seeb – Al Mabelah, Muscat." />
+  <meta name="keywords" content="ACTIVE GYM, أكتيف جيم, جيم السيب, نادي رياضي المعبيلة, مسقط, عمان, Gym Al Seeb, Mabelah Gym, Muscat Fitness Club" />
+  <meta name="theme-color" content="#0B0B0C" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ACTIVE GYM | أكتيف جيم — السيب، مسقط" />
+  <meta property="og:description" content="Train Harder. Live Active. | تمرّن بقوة. عِش بنشاط. أحدث تجربة لياقة بدنية في المعبيلة، السيب." />
+  <meta property="og:locale" content="ar_OM" />
+  <meta property="og:locale:alternate" content="en_OM" />
+
+  <!-- LocalBusiness / HealthClub Schema for Al Seeb, Muscat -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "ACTIVE GYM",
+    "alternateName": "أكتيف جيم",
+    "description": "Oman's most modern fitness club in Al Seeb – Al Mabelah, Muscat. Premium equipment, certified coaches, and high-energy atmosphere open to everyone.",
+    "telephone": "+96876888871",
+    "priceRange": "25 OMR - 180 OMR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Mabelah",
+      "addressLocality": "Al Seeb",
+      "addressRegion": "Muscat",
+      "addressCountry": "OM"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.6473,
+      "longitude": 58.1458
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "06:00",
+        "closes": "23:59"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "14:00",
+        "closes": "23:59"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/activegym.om",
+      "https://tiktok.com/@activegym.om",
+      "https://snapchat.com/add/activegym.om"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Cairo (Arabic), Bebas Neue & Oswald (English Headings), Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#0B0B0C',
+            surface: '#151517',
+            surfaceLight: '#1E1E22',
+            racing: '#E10613',
+            racingBright: '#FF1E27',
+            coolGray: '#9A9AA2',
+          },
+          fontFamily: {
+            arabic: ['Cairo', 'sans-serif'],
+            display: ['Bebas Neue', 'Oswald', 'sans-serif'],
+            oswald: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       ACTIVE GYM — CUSTOM VISUAL IDENTITY, LED MOTIFS & ANGULAR DIVIDERS
+       ========================================================================== */
+    :root {
+      --bg-primary: #0B0B0C;
+      --bg-surface: #151517;
+      --accent-red: #E10613;
+      --accent-bright: #FF1E27;
+      --text-secondary: #9A9AA2;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    /* Typography switching based on document direction/language */
+    html[lang="ar"] body {
+      font-family: 'Cairo', sans-serif;
+    }
+    html[lang="en"] body {
+      font-family: 'Inter', sans-serif;
+    }
+    html[lang="en"] .heading-display {
+      font-family: 'Bebas Neue', 'Oswald', sans-serif;
+      letter-spacing: 0.04em;
+    }
+    html[lang="ar"] .heading-display {
+      font-family: 'Cairo', sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+    }
+
+    /* Subtle Matte Carbon / Noise Texture Overlay */
+    .carbon-bg {
+      background-color: #0B0B0C;
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(225, 6, 19, 0.14) 0%, transparent 55%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.015) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.015) 25%, transparent 25%);
+      background-size: 100% 100%, 24px 24px, 24px 24px;
+    }
+
+    /* Racing Red Gradient & Neon Glow Utilities */
+    .btn-racing {
+      background: linear-gradient(135deg, #E10613 0%, #FF1E27 100%);
+      box-shadow: 0 0 22px rgba(225, 6, 19, 0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .btn-racing:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 34px rgba(255, 30, 39, 0.75);
+    }
+
+    .neon-red-border {
+      border: 1px solid rgba(255, 30, 39, 0.7);
+      box-shadow: 0 0 28px rgba(225, 6, 19, 0.28), inset 0 0 18px rgba(225, 6, 19, 0.12);
+    }
+
+    .neon-text-glow {
+      text-shadow: 0 0 24px rgba(225, 6, 19, 0.65);
+    }
+
+    .card-hover-glow {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover-glow:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 30, 39, 0.65);
+      box-shadow: 0 14px 36px -10px rgba(225, 6, 19, 0.32);
+    }
+
+    /* Geometric LED Ceiling Light Motif (Squares & Diamonds) */
+    .led-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 64px 64px;
+    }
+
+    .led-diamond {
+      transform: rotate(45deg);
+      border: 1.5px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 0 18px rgba(225, 6, 19, 0.35), inset 0 0 14px rgba(225, 6, 19, 0.25);
+    }
+    .led-diamond-red {
+      transform: rotate(45deg);
+      border: 1.5px solid #FF1E27;
+      box-shadow: 0 0 25px rgba(255, 30, 39, 0.6), inset 0 0 18px rgba(225, 6, 19, 0.35);
+    }
+
+    /* Angular Diagonal Section Dividers */
+    .clip-angle-bottom {
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 36px), 0 100%);
+    }
+    .clip-angle-top {
+      clip-path: polygon(0 36px, 100% 0, 100% 100%, 0 100%);
+    }
+    .clip-angle-both {
+      clip-path: polygon(0 32px, 100% 0, 100% calc(100% - 32px), 0 100%);
+    }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Dark Stylized Google Map Filter */
+    .dark-map-iframe {
+      filter: invert(92%) hue-rotate(180deg) contrast(95%) saturate(85%);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0B0C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272A;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E10613;
+    }
+
+    /* Focus Accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 2px solid #FF1E27;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body class="carbon-bg antialiased selection:bg-racing selection:text-white">
+
+  <!-- ========================================================================
+       STICKY HEADER
+       ======================================================================== -->
+  <header id="main-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-charcoal/80 backdrop-blur-md border-b border-white/10 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Brand Inline SVG Logo -->
+      <a href="#hero" class="flex items-center gap-2.5 group focus:outline-none" aria-label="ACTIVE GYM Home">
+        <div class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface border-2 border-racingBright flex items-center justify-center shadow-[0_0_20px_rgba(225,6,19,0.65)] group-hover:shadow-[0_0_28px_rgba(255,30,39,0.9)] transition-all">
+          <!-- LED inner corner accent -->
+          <span class="absolute inset-1 rounded-lg border border-white/20 pointer-events-none"></span>
+          <svg class="w-6 h-6 text-white" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 4L6 31H12.2L14.6 25.2H21.4L23.8 31H30L18 4ZM16.4 20.4L18 16.2L19.6 20.4H16.4Z" fill="white"/>
+            <path d="M13.5 22.5H22.5" stroke="#FF1E27" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-none" dir="ltr">
+          <span class="font-display text-2xl sm:text-3xl tracking-wider text-white font-bold">
+            ACTIVE <span class="text-racingBright">GYM</span>
+          </span>
+          <span class="text-[10px] tracking-[0.25em] text-coolGray uppercase font-body">AL SEEB • MUSCAT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav id="desktop-nav" class="hidden lg:flex items-center gap-7 text-sm font-semibold text-white/90" aria-label="Primary Navigation">
+        <!-- Populated dynamically via JS -->
+      </nav>
+
+      <!-- Header Right Actions: Language Toggle & Mobile Menu Button -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button
+          id="lang-toggle"
+          type="button"
+          class="px-3.5 py-2 rounded-xl bg-surface hover:bg-surfaceLight border border-white/15 hover:border-racingBright text-xs sm:text-sm font-bold text-white flex items-center gap-2 transition-all cursor-pointer"
+          aria-label="Switch Language / تغيير اللغة"
+        >
+          <span class="w-2 h-2 rounded-full bg-racingBright animate-pulse"></span>
+          <span id="lang-toggle-label">English</span>
+        </button>
+
+        <a
+          id="header-cta"
+          href="#memberships"
+          class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl btn-racing text-xs sm:text-sm font-bold text-white"
+        >
+          <!-- Populated dynamically -->
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="lg:hidden p-2.5 rounded-xl bg-surface border border-white/15 text-white hover:border-racingBright transition-colors"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Toggle Navigation Menu"
+        >
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="hidden lg:hidden bg-surface/95 backdrop-blur-xl border-b border-white/10 px-4 pt-3 pb-6">
+      <nav id="mobile-nav" class="flex flex-col gap-2" aria-label="Mobile Navigation">
+        <!-- Populated dynamically -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION (LOOPING VIDEO + LED CEILING MOTIF + RED GLOW)
+       ======================================================================== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-20 overflow-hidden clip-angle-bottom">
+    <!-- Looping Background Video with Fallback Poster -->
+    <div id="hero-media-wrapper" class="absolute inset-0 z-0">
+      <video
+        id="hero-video"
+        class="w-full h-full object-cover scale-105 opacity-45"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster=""
+      >
+        <source id="hero-video-src" src="" type="video/mp4" />
+      </video>
+      <!-- Dark Vignette & Racing Red Ambient Lighting -->
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal/85 via-charcoal/65 to-charcoal"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(225,6,19,0.24)_0%,rgba(11,11,12,0.92)_75%)]"></div>
+      <div class="absolute inset-0 led-grid-pattern opacity-40"></div>
+    </div>
+
+    <!-- Geometric LED Light Panels (Squares & Diamonds) -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden z-0" aria-hidden="true">
+      <div class="hidden md:block absolute top-28 start-12 w-36 h-36 led-diamond opacity-45"></div>
+      <div class="hidden md:block absolute top-36 start-20 w-24 h-24 led-diamond-red opacity-55"></div>
+      <div class="hidden md:block absolute bottom-28 end-16 w-44 h-44 led-diamond opacity-40"></div>
+      <div class="hidden md:block absolute bottom-36 end-24 w-28 h-28 led-diamond-red opacity-60"></div>
+      <!-- Overhead Neon Ceiling Bar -->
+      <div class="mx-auto mt-4 w-64 sm:w-96 h-1 rounded-full bg-gradient-to-r from-transparent via-racingBright to-transparent shadow-[0_0_25px_#FF1E27]"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Location Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface/90 border border-white/15 backdrop-blur-md mb-6 shadow-[0_0_20px_rgba(225,6,19,0.2)]">
+        <span class="w-2 h-2 rounded-full bg-racingBright"></span>
+        <span id="hero-badge" class="text-xs sm:text-sm font-semibold tracking-wide text-white/90"></span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 id="hero-title" class="heading-display text-5xl sm:text-7xl md:text-8xl text-white uppercase leading-[1.08] mb-6 neon-text-glow">
+        <!-- Populated dynamically -->
+      </h1>
+
+      <!-- Subheadline -->
+      <p id="hero-subtitle" class="max-w-2xl mx-auto text-base sm:text-xl text-coolGray leading-relaxed mb-10 font-medium">
+        <!-- Populated dynamically -->
+      </p>
+
+      <!-- Dual CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          id="hero-cta-primary"
+          href="#memberships"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl btn-racing text-white font-bold text-base sm:text-lg flex items-center justify-center gap-2.5"
+        >
+          <span id="hero-cta-primary-text"></span>
+          <svg class="w-5 h-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+
+        <a
+          id="hero-cta-whatsapp"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-surface/90 hover:bg-surfaceLight border border-white/20 hover:border-racingBright text-white font-bold text-base sm:text-lg flex items-center justify-center gap-2.5 transition-all"
+        >
+          <svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+          </svg>
+          <span id="hero-cta-whatsapp-text"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ANIMATED STATS STRIP
+       ======================================================================== -->
+  <section id="stats" class="relative z-20 -mt-8 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT SECTION (6 FEATURE CARDS WITH LED CORNER ACCENTS)
+       ======================================================================== -->
+  <section id="about" class="relative py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span id="about-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+        <h2 id="about-title" class="heading-display text-4xl sm:text-6xl text-white mb-4"></h2>
+        <p id="about-desc" class="text-coolGray text-base sm:text-lg"></p>
+      </div>
+
+      <div id="about-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EQUIPMENT SHOWCASE (BENTO GRID — 5 CATEGORIES)
+       ======================================================================== -->
+  <section id="equipment" class="relative py-20 sm:py-28 bg-surface/60 border-y border-white/10 clip-angle-both">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal">
+        <div>
+          <span id="equipment-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+          <h2 id="equipment-title" class="heading-display text-4xl sm:text-6xl text-white"></h2>
+        </div>
+        <p id="equipment-desc" class="text-coolGray max-w-md text-sm sm:text-base"></p>
+      </div>
+
+      <!-- Bento Grid -->
+      <div id="equipment-bento" class="grid grid-cols-1 md:grid-cols-12 gap-5">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MEMBERSHIPS SECTION (PRICES IN OMR + DIRECT WHATSAPP SUBSCRIPTION)
+       ======================================================================== -->
+  <section id="memberships" class="relative py-20 sm:py-28">
+    <!-- Ambient Red Glow -->
+    <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[540px] h-[540px] rounded-full bg-racing/10 blur-[120px]" aria-hidden="true"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span id="memberships-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+        <h2 id="memberships-title" class="heading-display text-4xl sm:text-6xl text-white mb-4"></h2>
+        <p id="memberships-desc" class="text-coolGray text-base sm:text-lg"></p>
+      </div>
+
+      <div id="memberships-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COACHES SECTION (4 CERTIFIED COACHES)
+       ======================================================================== -->
+  <section id="coaches" class="relative py-20 sm:py-28 bg-surface/50 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span id="coaches-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+        <h2 id="coaches-title" class="heading-display text-4xl sm:text-6xl text-white mb-4"></h2>
+        <p id="coaches-desc" class="text-coolGray text-base sm:text-lg"></p>
+      </div>
+
+      <div id="coaches-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       GALLERY & GRAND OPENING SUB-SECTION (MASONRY + LIGHTBOX)
+       ======================================================================== -->
+  <section id="gallery" class="relative py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span id="gallery-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+        <h2 id="gallery-title" class="heading-display text-4xl sm:text-6xl text-white mb-4"></h2>
+        <p id="gallery-desc" class="text-coolGray text-base sm:text-lg"></p>
+      </div>
+
+      <!-- Main Masonry Grid (10 Photos + 3 Video Thumbnails) -->
+      <div id="gallery-masonry" class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Grand Opening Highlight Sub-section -->
+      <div class="rounded-3xl bg-surface border border-white/10 p-6 sm:p-10 relative overflow-hidden reveal">
+        <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-racingBright to-transparent"></div>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+          <div>
+            <span id="opening-badge" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-racing/20 border border-racingBright/40 text-racingBright text-xs font-bold uppercase tracking-wider mb-2"></span>
+            <h3 id="opening-title" class="heading-display text-3xl sm:text-4xl text-white"></h3>
+          </div>
+          <p id="opening-desc" class="text-coolGray text-sm sm:text-base max-w-xl"></p>
+        </div>
+
+        <div id="opening-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TESTIMONIALS CAROUSEL
+       ======================================================================== -->
+  <section id="testimonials" class="relative py-20 sm:py-24 bg-surface/70 border-y border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+      <span id="testimonials-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+      <h2 id="testimonials-title" class="heading-display text-4xl sm:text-5xl text-white mb-10"></h2>
+
+      <div class="relative rounded-3xl bg-charcoal border border-white/10 p-8 sm:p-12 shadow-2xl">
+        <!-- Decorative LED Corners -->
+        <span class="absolute top-4 start-4 w-4 h-4 border-t-2 border-s-2 border-racingBright rounded-tl-md"></span>
+        <span class="absolute bottom-4 end-4 w-4 h-4 border-b-2 border-e-2 border-racingBright rounded-br-md"></span>
+
+        <svg class="w-10 h-10 text-racingBright/40 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+
+        <blockquote id="testimonial-quote" class="text-lg sm:text-2xl text-white font-semibold leading-relaxed mb-6 min-h-[5rem] flex items-center justify-center">
+          <!-- Populated dynamically -->
+        </blockquote>
+
+        <div class="mb-8">
+          <div id="testimonial-author" class="text-base font-bold text-white"></div>
+          <div id="testimonial-role" class="text-xs sm:text-sm text-racingBright font-medium"></div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="flex items-center justify-center gap-4">
+          <button
+            id="testimonial-prev"
+            type="button"
+            class="p-2.5 rounded-xl bg-surface hover:bg-surfaceLight border border-white/15 hover:border-racingBright text-white transition-colors"
+            aria-label="Previous Testimonial"
+          >
+            <svg class="w-5 h-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <div id="testimonial-dots" class="flex items-center gap-2">
+            <!-- Populated dynamically -->
+          </div>
+
+          <button
+            id="testimonial-next"
+            type="button"
+            class="p-2.5 rounded-xl bg-surface hover:bg-surfaceLight border border-white/15 hover:border-racingBright text-white transition-colors"
+            aria-label="Next Testimonial"
+          >
+            <svg class="w-5 h-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT, HOURS & GOOGLE MAP SECTION
+       ======================================================================== -->
+  <section id="contact" class="relative py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span id="contact-eyebrow" class="inline-block text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-racingBright mb-3"></span>
+        <h2 id="contact-title" class="heading-display text-4xl sm:text-6xl text-white mb-4"></h2>
+        <p id="contact-desc" class="text-coolGray text-base sm:text-lg"></p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Left/Start Column: Hours, Address, Socials & Map -->
+        <div class="lg:col-span-7 space-y-6 reveal">
+          <!-- Hours & Location Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Operating Hours -->
+            <div class="rounded-2xl bg-surface border border-white/10 p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-racing/15 border border-racingBright/40 flex items-center justify-center text-racingBright">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 id="hours-heading" class="text-lg font-bold text-white"></h3>
+              </div>
+              <ul id="hours-list" class="space-y-2.5 text-sm text-coolGray">
+                <!-- Populated dynamically -->
+              </ul>
+            </div>
+
+            <!-- Address & Direct Contact -->
+            <div class="rounded-2xl bg-surface border border-white/10 p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-racing/15 border border-racingBright/40 flex items-center justify-center text-racingBright">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 id="location-heading" class="text-lg font-bold text-white"></h3>
+              </div>
+              <p id="location-address" class="text-sm text-coolGray mb-3"></p>
+              <a id="location-phone" href="tel:+96876888871" dir="ltr" class="inline-block text-base font-bold text-white hover:text-racingBright transition-colors mb-4">
+                +968 76 88 88 71
+              </a>
+              <!-- Social Handles -->
+              <div id="contact-socials" class="flex flex-wrap items-center gap-2">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Google Map for Al Mabelah, Al Seeb, Muscat -->
+          <div class="rounded-2xl overflow-hidden border border-white/15 bg-surface h-72 sm:h-80 relative">
+            <iframe
+              id="google-map-iframe"
+              title="ACTIVE GYM Location - Al Mabelah, Al Seeb, Muscat, Oman"
+              src="https://www.google.com/maps?q=Al+Mabelah,+Al+Seeb,+Muscat,+Oman&output=embed"
+              class="w-full h-full border-0 dark-map-iframe"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Right/End Column: Direct WhatsApp Inquiry Form -->
+        <div class="lg:col-span-5 rounded-3xl bg-surface border border-white/10 p-6 sm:p-8 neon-red-border reveal">
+          <h3 id="form-heading" class="heading-display text-3xl text-white mb-2"></h3>
+          <p id="form-sub" class="text-sm text-coolGray mb-6"></p>
+
+          <form id="whatsapp-form" class="space-y-4">
+            <div>
+              <label id="label-name" for="input-name" class="block text-xs font-bold uppercase tracking-wider text-white/90 mb-2"></label>
+              <input
+                id="input-name"
+                type="text"
+                required
+                class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/15 text-white placeholder-coolGray/60 focus:border-racingBright focus:outline-none text-sm"
+              />
+            </div>
+
+            <div>
+              <label id="label-phone" for="input-phone" class="block text-xs font-bold uppercase tracking-wider text-white/90 mb-2"></label>
+              <input
+                id="input-phone"
+                type="tel"
+                dir="ltr"
+                required
+                class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/15 text-white placeholder-coolGray/60 focus:border-racingBright focus:outline-none text-sm text-start"
+              />
+            </div>
+
+            <div>
+              <label id="label-message" for="input-message" class="block text-xs font-bold uppercase tracking-wider text-white/90 mb-2"></label>
+              <textarea
+                id="input-message"
+                rows="4"
+                required
+                class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/15 text-white placeholder-coolGray/60 focus:border-racingBright focus:outline-none text-sm resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-4 rounded-xl btn-racing text-white font-bold text-base flex items-center justify-center gap-2.5 cursor-pointer"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span id="form-submit-text"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="bg-charcoal border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-surface border border-racingBright flex items-center justify-center shadow-[0_0_15px_rgba(225,6,19,0.5)]">
+          <span class="font-display text-xl text-white font-bold">A</span>
+        </div>
+        <div dir="ltr">
+          <span class="font-display text-2xl text-white tracking-wider">ACTIVE <span class="text-racingBright">GYM</span></span>
+        </div>
+      </div>
+
+      <p id="footer-tagline" class="text-sm text-coolGray text-center"></p>
+
+      <div class="text-xs text-coolGray" dir="ltr">
+        &copy; <span id="footer-year"></span> ACTIVE GYM Oman (@activegym.om)
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PERSISTENT FLOATING WHATSAPP BUTTON
+       ======================================================================== -->
+  <a
+    id="floating-whatsapp"
+    href="https://wa.me/96876888871"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 end-6 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-[0_0_25px_rgba(37,211,102,0.55)] hover:scale-110 transition-transform"
+  >
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+  </a>
+
+  <!-- ========================================================================
+       ACCESSIBLE FULL-SCREEN LIGHTBOX MODAL
+       ======================================================================== -->
+  <div
+    id="lightbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightbox-caption"
+    class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-lg flex items-center justify-center p-4"
+  >
+    <button
+      id="lightbox-close"
+      type="button"
+      class="absolute top-5 end-5 z-10 p-3 rounded-full bg-surface hover:bg-racing text-white transition-colors"
+      aria-label="Close Lightbox"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <button
+      id="lightbox-prev"
+      type="button"
+      class="absolute start-3 sm:start-6 z-10 p-3 rounded-full bg-surface/80 hover:bg-racing text-white transition-colors"
+      aria-label="Previous Media"
+    >
+      <svg class="w-6 h-6 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <div class="max-w-4xl w-full flex flex-col items-center">
+      <div id="lightbox-media-container" class="w-full max-h-[75vh] rounded-2xl overflow-hidden border border-white/15 bg-surface flex items-center justify-center">
+        <!-- Image or Video injected here -->
+      </div>
+      <p id="lightbox-caption" class="mt-4 text-center text-white font-semibold text-base sm:text-lg"></p>
+      <span id="lightbox-counter" class="text-xs text-coolGray mt-1"></span>
+    </div>
+
+    <button
+      id="lightbox-next"
+      type="button"
+      class="absolute end-3 sm:end-6 z-10 p-3 rounded-full bg-surface/80 hover:bg-racing text-white transition-colors"
+      aria-label="Next Media"
+    >
+      <svg class="w-6 h-6 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ========================================================================
+       CENTRALIZED CONFIGURATION & BILINGUAL CONTENT (EDIT EVERYTHING HERE)
+       ======================================================================== -->
+  <script>
+    const SITE_CONFIG = {
+      defaultLang: 'ar', // 'ar' (Arabic RTL) or 'en' (English LTR)
+      whatsappNumber: '96876888871',
+      displayPhone: '+968 76 88 88 71',
+      socials: {
+        instagram: { handle: '@activegym.om', url: 'https://instagram.com/activegym.om' },
+        tiktok: { handle: '@activegym.om', url: 'https://tiktok.com/@activegym.om' },
+        snapchat: { handle: '@activegym.om', url: 'https://snapchat.com/add/activegym.om' }
+      },
+
+      // ======================================================================
+      // PLACEHOLDER MEDIA ASSETS CONFIG (Swap URLs easily for real club media)
+      // ======================================================================
+      assets: {
+        heroVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-man-training-with-dumbbells-in-a-dark-gym-43477-large.mp4',
+        heroPosterUrl: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80',
+        fallbackImg: 'https://placehold.co/800x600/151517/FF1E27?text=ACTIVE+GYM+OMAN',
+
+        equipment: {
+          strength: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80',
+          freeWeights: 'https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?auto=format&fit=crop&w=1000&q=80',
+          cables: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1000&q=80',
+          cardio: 'https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1000&q=80',
+          functional: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80'
+        },
+
+        coaches: [
+          'https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80'
+        ],
+
+        // 10 Photos + 3 Video Thumbnails for Main Gallery
+        gallery: [
+          { type: 'image', src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80', ar: 'صالة التدريب الرئيسية بإضاءة LED حمراء', en: 'Main Training Floor with Red LED Panels' },
+          { type: 'video', src: 'https://assets.mixkit.co/videos/preview/mixkit-man-training-with-dumbbells-in-a-dark-gym-43477-large.mp4', thumb: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=80', ar: 'فيديو: جولة داخل أكتيف جيم ليلاً', en: 'Video: Night Tour Inside ACTIVE GYM' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?auto=format&fit=crop&w=900&q=80', ar: 'صفوف الأوزان الحرة والدامبلز من 2 إلى 50 كجم', en: 'Rows of Hex Dumbbells (2–50 kg)' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80', ar: 'أجهزة القوة الاحترافية بتصميم أسود وأحمر', en: 'Pro-Grade Black & Red Strength Machines' },
+          { type: 'video', src: 'https://assets.mixkit.co/videos/preview/mixkit-athlete-working-out-with-heavy-ropes-in-gym-43481-large.mp4', thumb: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80', ar: 'فيديو: تمارين التحمل واللياقة الوظيفية', en: 'Video: High-Intensity Functional Conditioning' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80', ar: 'محطات الكيبل المتكاملة لجميع الزوايا', en: 'Multi-Angle Cable Crossover Stations' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80', ar: 'لقطة مقربة لمقابض التمرين المعدنية', en: 'Close-Up Precision Knurled Gym Handles' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=900&q=80', ar: 'منطقة الكارديو الحديثة بإطلالة بانورامية', en: 'Modern Cardio Zone with Panoramic Layout' },
+          { type: 'video', src: 'https://assets.mixkit.co/videos/preview/mixkit-person-lifting-a-barbell-in-a-gym-43479-large.mp4', thumb: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80', ar: 'فيديو: تدريبات القوة ورفع الأثقال', en: 'Video: Heavy Powerlifting & Strength Session' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80', ar: 'إضاءة السقف الهندسية بتقنية نيون LED', en: 'Geometric Neon LED Ceiling Light Architecture' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=80', ar: 'مساحات واسعة مصممة للجميع', en: 'Spacious Training Zones Designed for Everyone' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80', ar: 'طاقة لا تتوقف في قلب المعبيلة، السيب', en: 'Unstoppable Energy in Al Mabelah, Al Seeb' },
+          { type: 'image', src: 'https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=900&q=80', ar: 'معدات حديثة بمعايير عالمية', en: 'World-Standard Modern Fitness Equipment' }
+        ],
+
+        // Grand Opening Sub-section (Traditional Omani Drummers, Cake Cutting, Dishdasha & Kumma)
+        grandOpening: [
+          {
+            type: 'image',
+            src: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80',
+            ar: 'الفرقة الشعبية العمانية والطبول التقليدية في حفل الافتتاح',
+            en: 'Traditional Omani Drummers & Folk Celebration at Grand Opening'
+          },
+          {
+            type: 'image',
+            src: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80',
+            ar: 'مراسم قص كعكة افتتاح ACTIVE GYM في المعبيلة',
+            en: 'Official ACTIVE GYM Cake Cutting Ceremony in Al Mabelah'
+          },
+          {
+            type: 'image',
+            src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80',
+            ar: 'حضور الضيوف والمشتركين بالزي العماني التقليدي (الدشداشة والكمة)',
+            en: 'Guests & Members Celebrating in Traditional Omani Dishdasha & Kumma'
+          }
+        ]
+      },
+
+      // ======================================================================
+      // MEMBERSHIPS CONFIG (PRICES IN OMR)
+      // ======================================================================
+      plans: [
+        {
+          id: 'monthly',
+          price: 25,
+          currency: { ar: 'ر.ع', en: 'OMR' },
+          badge: null,
+          highlighted: false,
+          name: { ar: 'اشتراك شهري', en: 'Monthly' },
+          duration: { ar: 'شهر واحد', en: '1 Month Access' },
+          features: {
+            ar: [
+              'دخول كامل لجميع مرافق النادي',
+              'خزائن ملابس ومرافق استحمام',
+              'تقييم شامل للياقة البدنية',
+              'جلسة تعريفية مجانية مع مدرب'
+            ],
+            en: [
+              'Full gym access to all zones',
+              'Locker room & shower facilities',
+              'Comprehensive fitness assessment',
+              'Free orientation session'
+            ]
+          }
+        },
+        {
+          id: '3months',
+          price: 65,
+          currency: { ar: 'ر.ع', en: 'OMR' },
+          badge: null,
+          highlighted: false,
+          name: { ar: '3 أشهر', en: '3 Months' },
+          duration: { ar: 'ربع سنوي', en: 'Quarterly Plan' },
+          features: {
+            ar: [
+              'دخول كامل لجميع مرافق النادي',
+              'خزائن ملابس ومرافق استحمام',
+              'تقييم شامل للياقة البدنية',
+              'جلسة تعريفية مجانية مع مدرب'
+            ],
+            en: [
+              'Full gym access to all zones',
+              'Locker room & shower facilities',
+              'Comprehensive fitness assessment',
+              'Free orientation session'
+            ]
+          }
+        },
+        {
+          id: '6months',
+          price: 110,
+          currency: { ar: 'ر.ع', en: 'OMR' },
+          badge: { ar: 'الأكثر طلباً', en: 'Most Popular' },
+          highlighted: true,
+          name: { ar: '6 أشهر', en: '6 Months' },
+          duration: { ar: 'نصف سنوي', en: 'Semi-Annual Plan' },
+          features: {
+            ar: [
+              'دخول كامل لجميع مرافق النادي',
+              'خزائن ملابس ومرافق استحمام',
+              'تقييم شامل للياقة البدنية',
+              'جلسة تعريفية مجانية مع مدرب',
+              'جلستان تدريب شخصي مجاناً',
+              'دعوة ضيف مجانية كل شهر'
+            ],
+            en: [
+              'Full gym access to all zones',
+              'Locker room & shower facilities',
+              'Comprehensive fitness assessment',
+              'Free orientation session',
+              '2 Personal training sessions',
+              '1 Free guest pass monthly'
+            ]
+          }
+        },
+        {
+          id: 'annual',
+          price: 180,
+          currency: { ar: 'ر.ع', en: 'OMR' },
+          badge: { ar: 'أفضل قيمة', en: 'Best Value' },
+          highlighted: false,
+          bestValue: true,
+          name: { ar: 'اشتراك سنوي', en: 'Annual' },
+          duration: { ar: '12 شهراً كاملاً', en: '12 Months Full Year' },
+          features: {
+            ar: [
+              'دخول كامل لجميع مرافق النادي',
+              'خزائن ملابس ومرافق استحمام',
+              'تقييم شامل للياقة البدنية',
+              'جلسة تعريفية مجانية مع مدرب',
+              'جلستان تدريب شخصي مجاناً',
+              'دعوة ضيف مجانية كل شهر'
+            ],
+            en: [
+              'Full gym access to all zones',
+              'Locker room & shower facilities',
+              'Comprehensive fitness assessment',
+              'Free orientation session',
+              '2 Personal training sessions',
+              '1 Free guest pass monthly'
+            ]
+          }
+        }
+      ],
+
+      // ======================================================================
+      // COACHES CONFIG
+      // ======================================================================
+      coaches: [
+        {
+          name: { ar: 'الكابتن خالد البلوشي', en: 'Coach Khalid Al-Balushi' },
+          specialty: { ar: 'كمال الأجسام وبناء العضلات', en: 'Bodybuilding' },
+          instagram: 'https://instagram.com/activegym.om',
+          handle: '@activegym.om'
+        },
+        {
+          name: { ar: 'الكابتن سالم الهنائي', en: 'Coach Salim Al-Hinai' },
+          specialty: { ar: 'القوة ورفع الأثقال', en: 'Strength & Powerlifting' },
+          instagram: 'https://instagram.com/activegym.om',
+          handle: '@activegym.om'
+        },
+        {
+          name: { ar: 'الكابتن مريم الريامي', en: 'Coach Maryam Al-Riyami' },
+          specialty: { ar: 'اللياقة البدنية وإنقاص الوزن', en: 'Fitness & Weight Loss' },
+          instagram: 'https://instagram.com/activegym.om',
+          handle: '@activegym.om'
+        },
+        {
+          name: { ar: 'الكابتن يوسف العامري', en: 'Coach Yousuf Al-Amri' },
+          specialty: { ar: 'التدريب الوظيفي والكروس فت', en: 'Functional & CrossFit' },
+          instagram: 'https://instagram.com/activegym.om',
+          handle: '@activegym.om'
+        }
+      ],
+
+      // ======================================================================
+      // BILINGUAL UI & SECTION COPY
+      // ======================================================================
+      copy: {
+        ar: {
+          langButton: 'English',
+          headerCta: 'اشترك الآن',
+          nav: [
+            { label: 'عن النادي', href: '#about' },
+            { label: 'الأجهزة', href: '#equipment' },
+            { label: 'العضويات', href: '#memberships' },
+            { label: 'المدربون', href: '#coaches' },
+            { label: 'المعرض', href: '#gallery' },
+            { label: 'تواصل معنا', href: '#contact' }
+          ],
+          hero: {
+            badge: 'السيب – المعبيلة، مسقط، عُمان',
+            title: 'تمرّن بقوة. عِش بنشاط.',
+            subtitle: 'أحدث تجربة جيم في السيب، أجهزة احترافية ومدربون معتمدون وطاقة لا تتوقف.',
+            ctaPrimary: 'اشترك الآن',
+            ctaWhatsapp: 'تواصل واتساب',
+            whatsappPrefill: 'مرحباً ACTIVE GYM! أرغب في الاستفسار عن الاشتراك في النادي.'
+          },
+          stats: [
+            { target: 800, suffix: '+', label: 'مشترك نشط' },
+            { target: 120, suffix: '+', label: 'جهاز حديث' },
+            { target: 12, suffix: '', label: 'مدرب معتمد' },
+            { textValue: '6AM–12AM', label: 'مفتوح يومياً' }
+          ],
+          about: {
+            eyebrow: 'لماذا ACTIVE GYM',
+            title: 'بيئة مصممة لتفجير طاقتك',
+            desc: 'نجمع بين أحدث التقنيات الرياضية والأجواء الحماسية الفاخرة في قلب المعبيلة لنمنح الجميع تجربة تدريب استثنائية.',
+            cards: [
+              { title: 'أجهزة احترافية', desc: 'أحدث معدات القوة والكارديو المختارة بعناية من أفضل العلامات العالمية.', icon: 'dumbbell' },
+              { title: 'صالات تدريب واسعة', desc: 'تصميم هندسي رحب يتيح حرية الحركة والراحة الكاملة في أوقات الذروة.', icon: 'space' },
+              { title: 'مدربون معتمدون', desc: 'نخبة من المدربين المعتمدين لمساعدتك على تحقيق أهدافك بأمان واحترافية.', icon: 'coach' },
+              { title: 'إضاءة وأجواء فاخرة', desc: 'تصميم إضاءة LED هندسي باللون الأحمر الناري والأسود المطفي لتحفيز أقصى طاقة.', icon: 'light' },
+              { title: 'نظافة فائقة', desc: 'تعقيم مستمر على مدار الساعة وصيانة دورية لكافة الأجهزة والمرافق.', icon: 'clean' },
+              { title: 'سهولة الوصول ومواقف سيارات', desc: 'موقع استراتيجي في السيب – المعبيلة مع مواقف سيارات واسعة ومريحة.', icon: 'parking' }
+            ]
+          },
+          equipment: {
+            eyebrow: 'تجهيزات عالمية',
+            title: 'أقسام ومعدات النادي',
+            desc: 'تشكيلة متكاملة تغطي كافة أساليب التدريب من بناء العضلات إلى اللياقة الوظيفية والكارديو.',
+            items: [
+              { key: 'strength', title: 'أجهزة القوة', tag: 'Biomechanics Pro', desc: 'أجهزة معزولة ومتعددة المفاصل لاستهداف كل عضلة بدقة عالية.', span: 'md:col-span-7' },
+              { key: 'freeWeights', title: 'الأوزان الحرة (2–50 كجم)', tag: 'Full Dumbbell Range', desc: 'مجموعة دامبلز سداسية كاملة من 2 إلى 50 كجم مع منصات رفع أولمبية.', span: 'md:col-span-5' },
+              { key: 'cables', title: 'محطات الكيبل', tag: 'Multi-Station', desc: 'أبراج كيبل مزدوجة ومتعددة الزوايا لمرونة لا محدودة في التمارين.', span: 'md:col-span-4' },
+              { key: 'cardio', title: 'منطقة الكارديو', tag: 'Smart Cardio', desc: 'أجهزة جري ودراجات وسلالم حديثة مزودة بشاشات تفاعلية.', span: 'md:col-span-4' },
+              { key: 'functional', title: 'التدريب الوظيفي', tag: 'Athletic Turf', desc: 'مساحة مخصصة لتمارين الكروس فت، الحبال، الكيتل بيل والرشاقة.', span: 'md:col-span-4' }
+            ]
+          },
+          memberships: {
+            eyebrow: 'باقات العضوية',
+            title: 'اختر خطتك وابدأ اليوم',
+            desc: 'باقات مرنة تناسب أهدافك بدون رسوم خفية — اضغط على اشترك الآن للتسجيل الفوري عبر واتساب.',
+            ctaText: 'اشترك الآن',
+            whatsappTemplate: (planName, price) => `مرحباً ACTIVE GYM! أرغب في الاشتراك في باقة (${planName}) بسعر ${price} ر.ع.`
+          },
+          coaches: {
+            eyebrow: 'فريق التدريب',
+            title: 'مدربون معتمدون لنتائج حقيقية',
+            desc: 'خبرة وشغف لدعم رحلتك الرياضية خطوة بخطوة نحو القوة واللياقة.'
+          },
+          gallery: {
+            eyebrow: 'جولة بصرية',
+            title: 'أجواء ACTIVE GYM والافتتاح الكبير',
+            desc: 'استكشف تفاصيل النادي، الإضاءة الهندسية، ولحظات الافتتاح التاريخي في المعبيلة.',
+            openingBadge: 'حدث خاص • المعبيلة',
+            openingTitle: 'الافتتاح الكبير لنادي ACTIVE GYM',
+            openingDesc: 'احتفلنا بانطلاقة النادي وسط أجواء عمانية أصيلة بحضور الضيوف والفرقة الشعبية ومراسم قص الكعكة.'
+          },
+          testimonials: {
+            eyebrow: 'آراء المشتركين',
+            title: 'ماذا يقول أعضاؤنا',
+            items: [
+              {
+                quote: 'أفضل جيم في المعبيلة بلا منازع! الإضاءة والأجواء تعطيك حماس مو طبيعي من أول ما تدخل، والأجهزة كلها جديدة ونظيفة جداً.',
+                author: 'طارق المحروقي',
+                role: 'مشترك في الباقة السنوية'
+              },
+              {
+                quote: 'تنظيم ممتاز ومساحة واسعة جداً حتى في أوقات الذروة، والمدربون متعاونون ويعطون نصائح احترافية حقيقية.',
+                author: 'سارة البوسعيدية',
+                role: 'مشتركة في باقة 6 أشهر'
+              },
+              {
+                quote: 'تنوع الأوزان الحرة ومحطات الكيبل يغنيك عن أي مكان ثاني في السيب. فعلاً تجربة نادي رياضي بمستوى عالمي.',
+                author: 'هيثم الشكيلي',
+                role: 'مشترك في باقة 3 أشهر'
+              }
+            ]
+          },
+          contact: {
+            eyebrow: 'موقعنا وساعات العمل',
+            title: 'زُرنا في المعبيلة أو تواصل معنا',
+            desc: 'فريقنا جاهز للإجابة على استفساراتكم ومساعدتكم في اختيار الباقة الأنسب.',
+            hoursHeading: 'ساعات العمل',
+            hours: [
+              { days: 'السبت – الخميس', time: '6:00 صباحاً – 12:00 منتصف الليل' },
+              { days: 'الجمعة', time: '2:00 ظهراً – 12:00 منتصف الليل' }
+            ],
+            locationHeading: 'العنوان والتواصل',
+            address: 'السيب – المعبيلة، مسقط، سلطنة عُمان',
+            formHeading: 'أرسل رسالة سريعة عبر واتساب',
+            formSub: 'اكتب بياناتك وسنفتح محادثة واتساب مباشرة مع فريق النادي.',
+            labelName: 'الاسم الكامل',
+            placeholderName: 'أدخل اسمك',
+            labelPhone: 'رقم الهاتف',
+            placeholderPhone: '9XXX XXXX',
+            labelMessage: 'رسالتك',
+            placeholderMessage: 'أود الاستفسار عن العضويات أو التدريب الشخصي...',
+            submitText: 'إرسال عبر واتساب'
+          },
+          footerTagline: 'نادي لياقة بدنية متكامل للجميع في السيب – المعبيلة، مسقط، عُمان.'
+        },
+
+        en: {
+          langButton: 'العربية',
+          headerCta: 'Join Now',
+          nav: [
+            { label: 'About', href: '#about' },
+            { label: 'Equipment', href: '#equipment' },
+            { label: 'Memberships', href: '#memberships' },
+            { label: 'Coaches', href: '#coaches' },
+            { label: 'Gallery', href: '#gallery' },
+            { label: 'Contact', href: '#contact' }
+          ],
+          hero: {
+            badge: 'Al Seeb – Al Mabelah, Muscat, Oman',
+            title: 'Train Harder. Live Active.',
+            subtitle: "Oman's most modern gym experience in Al Seeb — premium equipment, certified coaches, unstoppable energy.",
+            ctaPrimary: 'Join Now',
+            ctaWhatsapp: 'WhatsApp Us',
+            whatsappPrefill: 'Hello ACTIVE GYM! I would like to inquire about joining the club.'
+          },
+          stats: [
+            { target: 800, suffix: '+', label: 'Active Members' },
+            { target: 120, suffix: '+', label: 'Modern Machines' },
+            { target: 12, suffix: '', label: 'Certified Coaches' },
+            { textValue: '6AM–12AM', label: 'Open Daily' }
+          ],
+          about: {
+            eyebrow: 'WHY ACTIVE GYM',
+            title: 'ENGINEERED FOR PEAK PERFORMANCE',
+            desc: 'Combining world-class strength equipment with a high-energy neon atmosphere in the heart of Al Mabelah — built for everyone.',
+            cards: [
+              { title: 'Professional Equipment', desc: 'Precision-engineered strength and cardio machines from top international brands.', icon: 'dumbbell' },
+              { title: 'Spacious Training Halls', desc: 'Expansive floor layout ensuring effortless flow and comfort even during peak hours.', icon: 'space' },
+              { title: 'Certified Coaches', desc: 'Experienced, accredited coaches dedicated to guiding your progress safely.', icon: 'coach' },
+              { title: 'Premium Lighting & Atmosphere', desc: 'Signature geometric LED ceiling panels and racing-red accents that fuel intensity.', icon: 'light' },
+              { title: 'Spotless Cleanliness', desc: 'Continuous sanitization and meticulous maintenance across every zone and locker room.', icon: 'clean' },
+              { title: 'Easy Access & Parking', desc: 'Prime location in Al Seeb – Al Mabelah with ample, hassle-free parking.', icon: 'parking' }
+            ]
+          },
+          equipment: {
+            eyebrow: 'WORLD-CLASS GEAR',
+            title: 'EQUIPMENT SHOWCASE',
+            desc: 'A complete arsenal covering hypertrophy, powerlifting, conditioning, and cardiovascular endurance.',
+            items: [
+              { key: 'strength', title: 'Strength Machines', tag: 'Biomechanics Pro', desc: 'Plate-loaded and selectorized machines targeting every muscle group cleanly.', span: 'md:col-span-7' },
+              { key: 'freeWeights', title: 'Free Weights (2–50 kg)', tag: 'Full Dumbbell Range', desc: 'Complete hex dumbbell lineup from 2 to 50 kg plus Olympic lifting platforms.', span: 'md:col-span-5' },
+              { key: 'cables', title: 'Cable Stations', tag: 'Multi-Station', desc: 'Dual adjustable pulleys and multi-angle crossover towers for versatile training.', span: 'md:col-span-4' },
+              { key: 'cardio', title: 'Cardio Zone', tag: 'Smart Cardio', desc: 'Next-gen treadmills, stair climbers, and bikes with performance tracking.', span: 'md:col-span-4' },
+              { key: 'functional', title: 'Functional Training', tag: 'Athletic Turf', desc: 'Dedicated turf zone for CrossFit, battle ropes, kettlebells, and agility drills.', span: 'md:col-span-4' }
+            ]
+          },
+          memberships: {
+            eyebrow: 'MEMBERSHIP PLANS',
+            title: 'CHOOSE YOUR PLAN',
+            desc: 'Transparent plans in OMR with zero hidden fees — tap Subscribe to register instantly via WhatsApp.',
+            ctaText: 'Subscribe',
+            whatsappTemplate: (planName, price) => `Hello ACTIVE GYM! I would like to subscribe to the (${planName}) plan for ${price} OMR.`
+          },
+          coaches: {
+            eyebrow: 'COACHING TEAM',
+            title: 'CERTIFIED COACHES',
+            desc: 'Dedicated specialists ready to elevate your strength, conditioning, and transformation.'
+          },
+          gallery: {
+            eyebrow: 'VISUAL TOUR',
+            title: 'INSIDE ACTIVE GYM & GRAND OPENING',
+            desc: 'Explore our neon-lit training floors, precision equipment, and our unforgettable launch celebration.',
+            openingBadge: 'Milestone Event • Al Mabelah',
+            openingTitle: 'ACTIVE GYM Grand Opening',
+            openingDesc: 'Celebrating our launch with traditional Omani drummers, the official cake cutting ceremony, and guests in dishdasha and kumma.'
+          },
+          testimonials: {
+            eyebrow: 'MEMBER STORIES',
+            title: 'WHAT OUR MEMBERS SAY',
+            items: [
+              {
+                quote: 'Hands down the best gym in Al Mabelah! The red LED lighting and dark aesthetic give instant motivation, and every machine feels brand new.',
+                author: 'Tariq Al-Mahrouqi',
+                role: 'Annual Plan Member'
+              },
+              {
+                quote: 'Super clean, spacious layout even in the evening, and the coaches are genuinely supportive and knowledgeable.',
+                author: 'Sara Al-Busaidi',
+                role: '6 Months Plan Member'
+              },
+              {
+                quote: 'Having a full 2–50 kg dumbbell rack and top-tier cable stations right here in Al Seeb makes every workout effortless.',
+                author: 'Haitham Al-Shukaili',
+                role: '3 Months Plan Member'
+              }
+            ]
+          },
+          contact: {
+            eyebrow: 'HOURS & LOCATION',
+            title: 'VISIT US IN AL MABELAH',
+            desc: 'Stop by for a tour or send us a quick message on WhatsApp to get started today.',
+            hoursHeading: 'Opening Hours',
+            hours: [
+              { days: 'Saturday – Thursday', time: '6:00 AM – 12:00 AM' },
+              { days: 'Friday', time: '2:00 PM – 12:00 AM' }
+            ],
+            locationHeading: 'Location & Contact',
+            address: 'Al Seeb – Al Mabelah, Muscat, Oman',
+            formHeading: 'Quick WhatsApp Inquiry',
+            formSub: 'Fill in your details and we will open a direct WhatsApp chat with our team.',
+            labelName: 'Full Name',
+            placeholderName: 'Enter your name',
+            labelPhone: 'Phone Number',
+            placeholderPhone: '+968 9XXX XXXX',
+            labelMessage: 'Your Message',
+            placeholderMessage: 'I would like to ask about memberships or personal training...',
+            submitText: 'Send via WhatsApp'
+          },
+          footerTagline: 'A modern, welcoming fitness club for everyone in Al Seeb – Al Mabelah, Muscat, Oman.'
+        }
+      }
+    };
+
+    // ========================================================================
+    // APPLICATION STATE & RENDER LOGIC
+    // ========================================================================
+    let currentLang = SITE_CONFIG.defaultLang;
+    let testimonialIndex = 0;
+    let lightboxItems = [];
+    let lightboxIndex = 0;
+    let statsAnimated = false;
+
+    const ICONS = {
+      dumbbell: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.5 6.5v11M17.5 6.5v11M4 8.5v7M20 8.5v7M6.5 12h11"/></svg>`,
+      space: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>`,
+      coach: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>`,
+      light: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+      clean: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>`,
+      parking: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l2-5h10l2 5M3 10h18v7a1 1 0 01-1 1h-1a1 1 0 01-1-1v-1H6v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-7zm4 3h.01M17 13h.01"/></svg>`
+    };
+
+    function buildWhatsAppUrl(message) {
+      return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    }
+
+    function renderAll() {
+      const lang = currentLang;
+      const t = SITE_CONFIG.copy[lang];
+      const htmlEl = document.documentElement;
+
+      // Update Document Direction & Language
+      htmlEl.setAttribute('lang', lang);
+      htmlEl.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+      // Header
+      document.getElementById('lang-toggle-label').textContent = t.langButton;
+      document.getElementById('header-cta').textContent = t.headerCta;
+
+      const desktopNav = document.getElementById('desktop-nav');
+      const mobileNav = document.getElementById('mobile-nav');
+      desktopNav.innerHTML = t.nav.map(item =>
+        `<a href="${item.href}" class="hover:text-racingBright transition-colors py-1">${item.label}</a>`
+      ).join('');
+      mobileNav.innerHTML = t.nav.map(item =>
+        `<a href="${item.href}" class="mobile-nav-link block px-4 py-3 rounded-xl hover:bg-white/5 text-white font-semibold transition-colors">${item.label}</a>`
+      ).join('');
+
+      // Attach close listener to mobile links
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('mobile-drawer').classList.add('hidden');
+          document.getElementById('menu-icon-open').classList.remove('hidden');
+          document.getElementById('menu-icon-close').classList.add('hidden');
+          document.getElementById('mobile-menu-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Hero
+      document.getElementById('hero-badge').textContent = t.hero.badge;
+      document.getElementById('hero-title').textContent = t.hero.title;
+      document.getElementById('hero-subtitle').textContent = t.hero.subtitle;
+      document.getElementById('hero-cta-primary-text').textContent = t.hero.ctaPrimary;
+      document.getElementById('hero-cta-whatsapp-text').textContent = t.hero.ctaWhatsapp;
+      const waHeroUrl = buildWhatsAppUrl(t.hero.whatsappPrefill);
+      document.getElementById('hero-cta-whatsapp').href = waHeroUrl;
+      document.getElementById('floating-whatsapp').href = waHeroUrl;
+
+      // Stats Strip
+      const statsGrid = document.getElementById('stats-grid');
+      statsGrid.innerHTML = t.stats.map((stat, idx) => {
+        const displayInitial = stat.textValue
+          ? stat.textValue
+          : (statsAnimated ? `${stat.target}${stat.suffix}` : `0${stat.suffix}`);
+        return `
+          <div class="rounded-2xl bg-surface/95 backdrop-blur-md border border-white/10 p-5 sm:p-6 text-center relative overflow-hidden card-hover-glow">
+            <div class="absolute top-0 inset-x-8 h-0.5 bg-gradient-to-r from-transparent via-racingBright to-transparent"></div>
+            <div
+              class="stat-number font-display text-3xl sm:text-5xl text-white tracking-wide mb-1"
+              data-target="${stat.target || ''}"
+              data-suffix="${stat.suffix || ''}"
+              data-text="${stat.textValue || ''}"
+              dir="ltr"
+            >${displayInitial}</div>
+            <div class="text-xs sm:text-sm font-semibold text-coolGray">${stat.label}</div>
+          </div>
+        `;
+      }).join('');
+
+      // About Section
+      document.getElementById('about-eyebrow').textContent = t.about.eyebrow;
+      document.getElementById('about-title').textContent = t.about.title;
+      document.getElementById('about-desc').textContent = t.about.desc;
+      document.getElementById('about-grid').innerHTML = t.about.cards.map(card => `
+        <div class="rounded-2xl bg-surface border border-white/10 p-7 relative overflow-hidden card-hover-glow reveal visible">
+          <span class="absolute top-3 end-3 w-3 h-3 border-t border-e border-racingBright/70"></span>
+          <div class="w-12 h-12 rounded-xl bg-racing/15 border border-racingBright/40 text-racingBright flex items-center justify-center mb-5 shadow-[0_0_15px_rgba(225,6,19,0.25)]">
+            ${ICONS[card.icon]}
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2.5">${card.title}</h3>
+          <p class="text-sm text-coolGray leading-relaxed">${card.desc}</p>
+        </div>
+      `).join('');
+
+      // Equipment Bento Grid
+      document.getElementById('equipment-eyebrow').textContent = t.equipment.eyebrow;
+      document.getElementById('equipment-title').textContent = t.equipment.title;
+      document.getElementById('equipment-desc').textContent = t.equipment.desc;
+      document.getElementById('equipment-bento').innerHTML = t.equipment.items.map(item => {
+        const imgUrl = SITE_CONFIG.assets.equipment[item.key];
+        return `
+          <article class="${item.span} group relative rounded-3xl overflow-hidden bg-charcoal border border-white/10 min-h-[260px] sm:min-h-[300px] flex flex-col justify-end p-6 sm:p-8 card-hover-glow">
+            <img
+              src="${imgUrl}"
+              alt="${item.title}"
+              loading="lazy"
+              onerror="this.src='${SITE_CONFIG.assets.fallbackImg}'"
+              class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/65 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="inline-block px-3 py-1 rounded-lg bg-racing/25 border border-racingBright/50 text-racingBright text-xs font-bold tracking-wider uppercase mb-3" dir="ltr">
+                ${item.tag}
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">${item.title}</h3>
+              <p class="text-sm text-white/80 max-w-lg">${item.desc}</p>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Memberships Grid
+      document.getElementById('memberships-eyebrow').textContent = t.memberships.eyebrow;
+      document.getElementById('memberships-title').textContent = t.memberships.title;
+      document.getElementById('memberships-desc').textContent = t.memberships.desc;
+      document.getElementById('memberships-grid').innerHTML = SITE_CONFIG.plans.map(plan => {
+        const pName = plan.name[lang];
+        const pDur = plan.duration[lang];
+        const pCurr = plan.currency[lang];
+        const pFeatures = plan.features[lang];
+        const waLink = buildWhatsAppUrl(t.memberships.whatsappTemplate(pName, plan.price));
+        const cardBorder = plan.highlighted
+          ? 'neon-red-border bg-gradient-to-b from-surfaceLight to-surface scale-[1.01]'
+          : 'border border-white/10 bg-surface';
+        const badgeHtml = plan.badge
+          ? `<span class="absolute -top-3.5 inset-x-0 mx-auto w-fit px-4 py-1 rounded-full ${plan.highlighted ? 'btn-racing' : 'bg-white text-charcoal'} text-xs font-extrabold uppercase tracking-wider shadow-lg">${plan.badge[lang]}</span>`
+          : '';
+
+        return `
+          <div class="relative rounded-3xl ${cardBorder} p-7 flex flex-col justify-between card-hover-glow">
+            ${badgeHtml}
+            <div>
+              <div class="mb-5 pt-2">
+                <h3 class="text-2xl font-bold text-white">${pName}</h3>
+                <p class="text-xs text-coolGray mt-1">${pDur}</p>
+              </div>
+
+              <div class="flex items-baseline gap-2 mb-6 pb-6 border-b border-white/10">
+                <span class="font-display text-5xl sm:text-6xl text-white font-bold" dir="ltr">${plan.price}</span>
+                <span class="text-base font-bold text-racingBright">${pCurr}</span>
+              </div>
+
+              <ul class="space-y-3 mb-8 text-sm">
+                ${pFeatures.map((feat, i) => {
+                  const isBonus = i >= 4;
+                  return `
+                    <li class="flex items-start gap-2.5 ${isBonus ? 'text-white font-semibold' : 'text-coolGray'}">
+                      <svg class="w-5 h-5 text-racingBright shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>${feat}</span>
+                    </li>
+                  `;
+                }).join('')}
+              </ul>
+            </div>
+
+            <a
+              href="${waLink}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-3.5 px-5 rounded-xl ${plan.highlighted ? 'btn-racing text-white' : 'bg-white/10 hover:bg-racing text-white'} font-bold text-sm text-center transition-all flex items-center justify-center gap-2"
+            >
+              <span>${t.memberships.ctaText}</span>
+              <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        `;
+      }).join('');
+
+      // Coaches Grid
+      document.getElementById('coaches-eyebrow').textContent = t.coaches.eyebrow;
+      document.getElementById('coaches-title').textContent = t.coaches.title;
+      document.getElementById('coaches-desc').textContent = t.coaches.desc;
+      document.getElementById('coaches-grid').innerHTML = SITE_CONFIG.coaches.map((coach, idx) => {
+        const cName = coach.name[lang];
+        const cSpec = coach.specialty[lang];
+        const portrait = SITE_CONFIG.assets.coaches[idx];
+        return `
+          <div class="group rounded-3xl bg-charcoal border border-white/10 overflow-hidden card-hover-glow">
+            <div class="relative aspect-[4/5] overflow-hidden bg-surface">
+              <img
+                src="${portrait}"
+                alt="${cName} - ${cSpec}"
+                loading="lazy"
+                onerror="this.src='${SITE_CONFIG.assets.fallbackImg}'"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent"></div>
+              <a
+                href="${coach.instagram}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="${cName} Instagram"
+                class="absolute top-4 end-4 w-10 h-10 rounded-xl bg-charcoal/80 hover:bg-racing backdrop-blur-md border border-white/15 flex items-center justify-center text-white transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-1">${cName}</h3>
+              <p class="text-sm font-semibold text-racingBright mb-3">${cSpec}</p>
+              <a href="${coach.instagram}" target="_blank" rel="noopener noreferrer" dir="ltr" class="text-xs text-coolGray hover:text-white transition-colors">
+                ${coach.handle}
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Gallery & Grand Opening
+      document.getElementById('gallery-eyebrow').textContent = t.gallery.eyebrow;
+      document.getElementById('gallery-title').textContent = t.gallery.title;
+      document.getElementById('gallery-desc').textContent = t.gallery.desc;
+      document.getElementById('opening-badge').textContent = t.gallery.openingBadge;
+      document.getElementById('opening-title').textContent = t.gallery.openingTitle;
+      document.getElementById('opening-desc').textContent = t.gallery.openingDesc;
+
+      // Combine all gallery items for unified Lightbox navigation
+      lightboxItems = [...SITE_CONFIG.assets.gallery, ...SITE_CONFIG.assets.grandOpening];
+
+      document.getElementById('gallery-masonry').innerHTML = SITE_CONFIG.assets.gallery.map((item, idx) => {
+        const caption = item[lang];
+        const previewSrc = item.type === 'video' ? item.thumb : item.src;
+        return `
+          <button
+            type="button"
+            onclick="openLightbox(${idx})"
+            class="group relative w-full block break-inside-avoid rounded-2xl overflow-hidden bg-surface border border-white/10 hover:border-racingBright text-start cursor-pointer transition-all"
+          >
+            <img
+              src="${previewSrc}"
+              alt="${caption}"
+              loading="lazy"
+              onerror="this.src='${SITE_CONFIG.assets.fallbackImg}'"
+              class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+            ${item.type === 'video' ? `
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-14 h-14 rounded-full btn-racing flex items-center justify-center text-white">
+                  <svg class="w-6 h-6 ms-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            ` : ''}
+            <div class="absolute bottom-3 inset-x-4">
+              <p class="text-xs sm:text-sm font-semibold text-white line-clamp-2">${caption}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      const mainCount = SITE_CONFIG.assets.gallery.length;
+      document.getElementById('opening-grid').innerHTML = SITE_CONFIG.assets.grandOpening.map((item, idx) => {
+        const caption = item[lang];
+        const globalIdx = mainCount + idx;
+        return `
+          <button
+            type="button"
+            onclick="openLightbox(${globalIdx})"
+            class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-charcoal border border-white/15 hover:border-racingBright text-start cursor-pointer"
+          >
+            <img
+              src="${item.src}"
+              alt="${caption}"
+              loading="lazy"
+              onerror="this.src='${SITE_CONFIG.assets.fallbackImg}'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+            <div class="absolute bottom-4 inset-x-4">
+              <p class="text-sm font-bold text-white">${caption}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      // Testimonials
+      document.getElementById('testimonials-eyebrow').textContent = t.testimonials.eyebrow;
+      document.getElementById('testimonials-title').textContent = t.testimonials.title;
+      renderTestimonialSlide();
+
+      // Contact & Hours
+      document.getElementById('contact-eyebrow').textContent = t.contact.eyebrow;
+      document.getElementById('contact-title').textContent = t.contact.title;
+      document.getElementById('contact-desc').textContent = t.contact.desc;
+      document.getElementById('hours-heading').textContent = t.contact.hoursHeading;
+      document.getElementById('hours-list').innerHTML = t.contact.hours.map(h => `
+        <li class="flex flex-col sm:flex-row sm:justify-between gap-1 pb-2 border-b border-white/5 last:border-0">
+          <span class="font-semibold text-white">${h.days}</span>
+          <span class="text-coolGray">${h.time}</span>
+        </li>
+      `).join('');
+
+      document.getElementById('location-heading').textContent = t.contact.locationHeading;
+      document.getElementById('location-address').textContent = t.contact.address;
+      document.getElementById('location-phone').textContent = SITE_CONFIG.displayPhone;
+
+      const socialEntries = [
+        { label: 'Instagram', url: SITE_CONFIG.socials.instagram.url, handle: SITE_CONFIG.socials.instagram.handle },
+        { label: 'TikTok', url: SITE_CONFIG.socials.tiktok.url, handle: SITE_CONFIG.socials.tiktok.handle },
+        { label: 'Snapchat', url: SITE_CONFIG.socials.snapchat.url, handle: SITE_CONFIG.socials.snapchat.handle }
+      ];
+      document.getElementById('contact-socials').innerHTML = socialEntries.map(s => `
+        <a
+          href="${s.url}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-3 py-1.5 rounded-lg bg-charcoal hover:bg-racing border border-white/10 text-xs font-semibold text-white transition-colors"
+        >
+          ${s.label} (${s.handle})
+        </a>
+      `).join('');
+
+      // Contact Form Labels
+      document.getElementById('form-heading').textContent = t.contact.formHeading;
+      document.getElementById('form-sub').textContent = t.contact.formSub;
+      document.getElementById('label-name').textContent = t.contact.labelName;
+      document.getElementById('input-name').placeholder = t.contact.placeholderName;
+      document.getElementById('label-phone').textContent = t.contact.labelPhone;
+      document.getElementById('input-phone').placeholder = t.contact.placeholderPhone;
+      document.getElementById('label-message').textContent = t.contact.labelMessage;
+      document.getElementById('input-message').placeholder = t.contact.placeholderMessage;
+      document.getElementById('form-submit-text').textContent = t.contact.submitText;
+
+      // Footer
+      document.getElementById('footer-tagline').textContent = t.footerTagline;
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+    }
+
+    // ========================================================================
+    // TESTIMONIALS CAROUSEL LOGIC
+    // ========================================================================
+    function renderTestimonialSlide() {
+      const items = SITE_CONFIG.copy[currentLang].testimonials.items;
+      const item = items[testimonialIndex % items.length];
+      document.getElementById('testimonial-quote').textContent = `"${item.quote}"`;
+      document.getElementById('testimonial-author').textContent = item.author;
+      document.getElementById('testimonial-role').textContent = item.role;
+
+      document.getElementById('testimonial-dots').innerHTML = items.map((_, i) => `
+        <button
+          type="button"
+          onclick="goToTestimonial(${i})"
+          aria-label="Slide ${i + 1}"
+          class="h-2.5 rounded-full transition-all ${i === testimonialIndex ? 'w-8 bg-racingBright' : 'w-2.5 bg-white/25 hover:bg-white/50'}"
+        ></button>
+      `).join('');
+    }
+
+    function goToTestimonial(idx) {
+      testimonialIndex = idx;
+      renderTestimonialSlide();
+    }
+
+    // ========================================================================
+    // LIGHTBOX GALLERY LOGIC
+    // ========================================================================
+    function openLightbox(index) {
+      lightboxIndex = index;
+      updateLightboxContent();
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      document.getElementById('lightbox-media-container').innerHTML = '';
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxContent() {
+      const item = lightboxItems[lightboxIndex];
+      const container = document.getElementById('lightbox-media-container');
+      const caption = item[currentLang];
+
+      if (item.type === 'video') {
+        container.innerHTML = `
+          <video controls autoplay playsinline class="w-full max-h-[72vh] bg-black">
+            <source src="${item.src}" type="video/mp4" />
+          </video>
+        `;
+      } else {
+        container.innerHTML = `
+          <img
+            src="${item.src}"
+            alt="${caption}"
+            onerror="this.src='${SITE_CONFIG.assets.fallbackImg}'"
+            class="w-full max-h-[72vh] object-contain"
+          />
+        `;
+      }
+
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox-counter').textContent = `${lightboxIndex + 1} / ${lightboxItems.length}`;
+    }
+
+    // ========================================================================
+    // ANIMATED COUNTERS & SCROLL REVEAL
+    // ========================================================================
+    function animateCounters() {
+      if (statsAnimated) return;
+      statsAnimated = true;
+
+      document.querySelectorAll('.stat-number').forEach(el => {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const textVal = el.dataset.text;
+        if (textVal || isNaN(target)) return;
+
+        const duration = 1600;
+        const startTime = performance.now();
+
+        function tick(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.floor(eased * target);
+          el.textContent = `${current}${suffix}`;
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            el.textContent = `${target}${suffix}`;
+          }
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    // ========================================================================
+    // INITIALIZATION & EVENT LISTENERS
+    // ========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set Hero Video & Poster from Config
+      const heroVideo = document.getElementById('hero-video');
+      heroVideo.poster = SITE_CONFIG.assets.heroPosterUrl;
+      document.getElementById('hero-video-src').src = SITE_CONFIG.assets.heroVideoUrl;
+      heroVideo.load();
+
+      // Render Initial Language
+      renderAll();
+
+      // Language Toggle
+      document.getElementById('lang-toggle').addEventListener('click', () => {
+        currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        renderAll();
+      });
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileDrawer.classList.toggle('hidden');
+        mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+        document.getElementById('menu-icon-open').classList.toggle('hidden', !isHidden);
+        document.getElementById('menu-icon-close').classList.toggle('hidden', isHidden);
+      });
+
+      // Sticky Header Shrink on Scroll & Subtle Hero Parallax
+      const header = document.getElementById('main-header');
+      const heroMedia = document.getElementById('hero-media-wrapper');
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 40) {
+          header.classList.add('py-2.5', 'bg-charcoal/95', 'shadow-xl');
+          header.classList.remove('py-4', 'bg-charcoal/80');
+        } else {
+          header.classList.remove('py-2.5', 'bg-charcoal/95', 'shadow-xl');
+          header.classList.add('py-4', 'bg-charcoal/80');
+        }
+        if (scrollY < window.innerHeight && heroMedia) {
+          heroMedia.style.transform = `translateY(${scrollY * 0.25}px)`;
+        }
+      }, { passive: true });
+
+      // Testimonials Navigation
+      document.getElementById('testimonial-prev').addEventListener('click', () => {
+        const len = SITE_CONFIG.copy[currentLang].testimonials.items.length;
+        testimonialIndex = (testimonialIndex - 1 + len) % len;
+        renderTestimonialSlide();
+      });
+      document.getElementById('testimonial-next').addEventListener('click', () => {
+        const len = SITE_CONFIG.copy[currentLang].testimonials.items.length;
+        testimonialIndex = (testimonialIndex + 1) % len;
+        renderTestimonialSlide();
+      });
+
+      // Lightbox Controls & Keyboard Escape
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      document.getElementById('lightbox-prev').addEventListener('click', () => {
+        lightboxIndex = (lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length;
+        updateLightboxContent();
+      });
+      document.getElementById('lightbox-next').addEventListener('click', () => {
+        lightboxIndex = (lightboxIndex + 1) % lightboxItems.length;
+        updateLightboxContent();
+      });
+      document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+        if (e.target.id === 'lightbox-modal') closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('lightbox-modal');
+        if (modal.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') {
+          lightboxIndex = (lightboxIndex + 1) % lightboxItems.length;
+          updateLightboxContent();
+        }
+        if (e.key === 'ArrowLeft') {
+          lightboxIndex = (lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length;
+          updateLightboxContent();
+        }
+      });
+
+      // Quick WhatsApp Inquiry Form Submit
+      document.getElementById('whatsapp-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('input-name').value.trim();
+        const phone = document.getElementById('input-phone').value.trim();
+        const msg = document.getElementById('input-message').value.trim();
+
+        const formattedMessage = currentLang === 'ar'
+          ? `مرحباً ACTIVE GYM!\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالرسالة: ${msg}`
+          : `Hello ACTIVE GYM!\nName: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
+
+        window.open(buildWhatsAppUrl(formattedMessage), '_blank', 'noopener,noreferrer');
+      });
+
+      // IntersectionObserver for Scroll Reveal & Stats Counter Trigger
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            if (entry.target.id === 'stats') {
+              animateCounters();
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      const statsSection = document.getElementById('stats');
+      if (statsSection) observer.observe(statsSection);
+    });
+  </script>
+</body>
+</html>
